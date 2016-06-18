@@ -1,0 +1,210 @@
+/******************************************************************************/
+/***************************LayOut Generale*************************************/
+/******************************************************************************/
+
+body {
+    background: url(http://a7.sphotos.ak.fbcdn.net/hphotos-ak-snc6/216924_2233309320623_1484621986_2451908_3907520_n.jpg) no-repeat bottom ;
+    margin: 0; 
+    padding: 0;
+}
+body a:hover{
+    text-decoration:underline;
+}
+
+#container { 
+    margin: auto;
+    width:1200px;
+    overflow: hidden;
+}
+#header{             
+    color: #BEBEBE;
+    float: right;
+    height: 42px;
+    width: 305px;
+}
+#header a{   
+    margin: 10px;
+}
+#headerBar{
+    position: relative;
+    margin-left: 10px;
+    top: 120px;
+}
+#saynomore{
+    overflow: hidden;
+}
+#content{ 
+    margin: 0px 10px 10px 10px;
+    padding:  10px 10px 10px 10px;
+    width:  96%; 
+    height: 570px;
+}
+#left{
+    float: left;
+    height: 530px;
+    overflow: visible;
+    width: 191px;
+    z-index: -1;
+}
+
+#mid{
+    height:580px;
+    margin-left: 190px;
+    margin-top: 35px;
+    width: 900px;
+    overflow: visible;
+}
+#mid img{cursor:pointer;} 
+#footer{
+    font-size: 15px;
+    font-style:  oblique;
+    padding:30px;
+    bottom: 10px;
+    text-align: center;
+}
+/*************************due pulsanti in alto*************************************/
+#login{
+    font-size: 13px;
+
+}
+#help{
+    font-size: 13px;
+}
+/**************dialoghi*************************/
+#dialogLogin, #dialogAddFlw,#dialogAddTsr{
+    font-size: 14px;
+   
+}
+#loginDiv, #FlwDiv, #TsrDiv{
+     height: 100px;
+     width: 137px;
+}
+#dialogLogin,#dialogHelp,#dialogSearch,#dialogSpam, #dialogAddFlw,#dialogAddTsr,#dialogErrAjax,#dialogSucAjax{
+    display: none;
+}
+#dialogHelp{
+     font-size: 12px;
+}
+#npForm{
+     height: 285px;
+}
+#npTextArea{
+    width: 320px;
+    height: 130px;
+}
+#npHashZone{
+    margin-top:  1px;
+    margin-left:  1px;
+}
+#multimedia{
+    margin-top:  8px;
+    margin-left:  1px;
+}
+
+#radioLineOne,#radioLineTwo{
+    width:350px;
+}
+/************************* elementi img in mid*************************************/
+#envelope { 
+    WIDTH:130px;
+    HEIGHT:130px;
+    float: right; 
+    position: relative;  
+    top: 452px;  
+    right: 125px;
+    padding: 0.2em;
+    cursor:pointer;
+}
+#pin{
+    width: 60px;
+    height: 60px;
+    float: right;
+    margin-top: 60px;
+    margin-right: -40px;  
+}
+#magnifier{
+    height: 250px;
+    margin-top: 427px;
+    width: 250px;
+}
+/***for general ui-icon**/
+.ui-icon , .tFindable{ cursor:pointer;} 
+
+.ui-widget-header {
+    font-size: 14px;
+}
+.ui-button-text {
+    font-size: 13px;
+}
+
+/*******************************************/
+/***********lists relazioni tesauri*********/
+/*******************************************/
+#lists{
+    width:21%;
+    height:340px;
+    float: right;
+    margin: 120px -240px -10px 10px;
+    text-align:  justify;
+}
+#accordion{
+    display: none;
+}
+.rlistTitle{
+    font-size: 13px;
+}
+#tabs{
+    font-size: 13px; padding: 0 0 0 0; margin: 0 0 0 0;
+}
+#tabs ul{
+    font-size: 12px;
+}
+/**  #tabs-1,#tabs-2{
+    overflow: auto;
+} **/
+.ls_flw .ui-icon-scissors
+{
+     margin-top: 10px;
+}
+.ls_flw .user{
+    margin-left: 20px;
+    margin-top: -17px;
+}
+.user:hover{
+    cursor : pointer;
+    text-decoration: underline;
+}
+#servers .ui-button-text {
+    font-size: 12px;
+}
+#servers .ui-button{
+    margin-top: 2px;
+    width: 131px;
+}
+#servers{
+    overflow: auto;
+}
+#tesauriList{
+    font-size: 12px;
+}
+
+/*****************
+* autocomplete
+*******************/
+.ui-autocomplete {
+    max-height: 100px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+    /* add padding to account for vertical scrollbar */
+    padding-right: 20px;
+}
+/* IE 6 doesn't support max-height
+ * we use height instead, but this forces the menu to always be this tall
+*/
+* html .ui-autocomplete {
+    height: 100px;
+}
+.ui-menu-item {
+    font-size: 13px;
+}

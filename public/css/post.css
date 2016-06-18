@@ -1,0 +1,163 @@
+/* 
+    Document   : post
+    Created on : 1-ago-2011, 14.55.55
+    Author     : Tong
+    Description:
+       gestioni di layout per un singolo post
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+/***************************************************/
+/********************POSTS *************************/
+/***************************************************/
+
+/***post frame**/
+.postdiv{   
+    position: absolute;
+    width:130px;
+    height:50px; 
+    padding:20px;
+    overflow:hidden;
+    background-color:#FFEC8B;
+    color: #06185c; 
+    border: solid;   
+    border-color: #969696;
+    border-width:  1px;
+    z-index: 8;
+    opacity: 1;
+
+}
+/****informazione di post id nel db server**********/
+.postAbout{
+    display:none;
+}
+/**polling post**/
+.ppost{
+    display:none;
+}
+/**decorazione per il boder del post quando allargato**/
+.boderShow{
+    border-right-width: 4px;
+    border-right-color: #999999;
+    border-bottom-color: #999999;
+    border-bottom-width: 4px;
+}
+
+/*********** quando post non e' focalizzato **********/
+.postFade{
+    z-index: 7;
+    background-color: #ffec8b;
+    opacity: 0.9;
+}
+/**stringhe su post quando e' piccolo'**/
+.postUser{
+    text-decoration:underline;
+    font-size: 12px; 
+    font-family:cursive;
+    margin-left:-11px;
+} 
+.postDate{
+    display:none; 
+    font-size: 10px;
+    float:right; 
+    margin-top: -14px; 
+    margin-left: -15px;
+} 
+.postTxt{
+    font-size: 13px;
+    margin-left: -10px;
+    margin-top: -20px;
+    white-space:normal; 
+    overflow: hidden;
+}
+/**quando post e' allargato'**/
+.postRich{
+    display: none;
+}
+/**contenitore di video oppure img**/
+.postIframe{
+    margin-top: -13px; 
+    margin-left:4px;
+    
+}
+/**per imagine sul post**/
+.postImg{
+    width: 300px; 
+    height: 230px; 
+}
+.postAud{
+    margin-top: 60px;
+    width: 304px;
+    height: 27px;
+}
+/***finestrina di replies****/
+.postReplies{
+   
+    display:none;
+    margin-top: 20px; 
+    height: 120px; 
+    overflow: auto;
+}
+/*******varie icone sul post*******/
+.icoClose{
+    position: absolute;
+    left: 1px; 
+    top: 1px;
+}
+.icoTools{
+    position: absolute;
+    left: 20px; 
+    top: 1px;
+}
+.icoEnlarge{
+    position: absolute;
+    top: 1px;
+    left: 40px; 
+}
+.icoComment{
+    display: none; 
+    position: absolute;
+    right: 7px; 
+    bottom: 5px;
+}
+.linkpost  ,  .midterm{
+    cursor: pointer;
+    
+}
+.linkpost:hover  ,  .midterm:hover{
+    color: red;
+    text-decoration: underline;
+}
+.linkpost:visited  ,  .midterm:visited{
+    color: blue;
+    text-decoration: underline;
+}
+/*********** tool bar **********/
+.postBar{
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 80px;
+    height: 20px;
+}
+.icoDislike{
+    position: absolute; 
+    top: 0px; 
+    left: 20px;
+}
+.icoReply{
+    position: absolute; 
+    top: 0px; 
+    left: 40px;
+}
+.icoFollow{
+    position: absolute; 
+    top: 0px; 
+    left: 60px;
+}
+
